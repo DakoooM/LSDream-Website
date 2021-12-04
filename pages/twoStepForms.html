@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+        <link rel="stylesheet" href="../css/twoStepForms.css">
+        <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+        <script src="../main.js"></script>
+        <title>LS Dream - Formulaire 2</title>
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "background-img">
+                <div class = "backgrnd-color">
+                    <div class="navbar-main">
+                        <div class="flex-container">
+                            <div class = "flex-items"></div>
+                            <i class="fas fa-home"></i><a href="../main.html"><p id = "navbar1">Acceuil</p></a>
+                            <i class="fas fa-align-center"></i><a href = "reglement.html"><p id = "navbar2">Règlement</p></a>
+                            <i class="fas fa-users"></i><a><p id = "navbar3">Douane</p></a>
+                            <i class="fab fa-discord"></i><a href="https://discord.gg/jNZUYXra2M" target = "_blank"><p id = "navbar4">Discord</p></a>
+                        </div>
+                    </div>
+                    <div class = "main-title1">Informations RP <strong>Etape 2.</strong></div>
+                    <div class = "hourgame-result-main">
+                        <h3>Heure de Jeu (FiveM)</h3>
+                        <input id = "hourgame-result" class="form-hourgame" type="number" placeholder="Ex: 4 725">
+                    </div>
+                    <div class = "servergame-result-main">
+                        <h3>Serveur sur lesquels vous avez joué</h3>
+                        <input id = "servergame-result" class="form-servergame" type="text" placeholder="Ex: GLife, LSConfidential, Flashback">
+                    </div>
+                    <div class = "nameLast-result-main">
+                        <h3>Nom & Prénom RP</h3>
+                        <input id = "nameLast-result" class="form-nameLast" type="text" placeholder="Ex: Bernard Moussie">
+                    </div>
+                    <div class = "dobrp-result-main">
+                        <h3>Date de Naissance RP</h3>
+                        <input id = "dobrp-result" class="form-dobrp" type="date" placeholder="Ex: 19 ans">
+                    </div>
+                    <div class = "rpWant-result-main">
+                        <h3>Type de RP que vous souhaitez faire (LSPD, LSMC, Illégal, Légal)</h3>
+                        <input id = "rpWant-result" class="form-rpWant" type="text" placeholder="Ex: LSPD">
+                    </div>
+                    <div class = "backgroundLink-result-main">
+                        <h3>Lien du Background de votre personnage</h3>
+                        <input class="form-backgroundLink" type="text" id="backgroundRP" placeholder="Ex: https://docs.google.com/ayj545d97xzhmqp462">
+                    </div>
+                    <div class = "confirm-button-first-step">
+                        <p onclick="twoStepVerification()">Envoyez ma candidature</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

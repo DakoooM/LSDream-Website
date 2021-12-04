@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+        <link rel="stylesheet" href="../css/formulaire.css">
+        <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+        <script src="../main.js"></script>
+        <title>LS Dream - Formulaire</title>
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "background-img">
+                <div class = "backgrnd-color">
+                    <div class="navbar-main">
+                        <div class="flex-container">
+                            <div class = "flex-items"></div>
+                            <i class="fas fa-home"></i><a href="../main.html"><p id = "navbar1">Acceuil</p></a>
+                            <i class="fas fa-align-center"></i><a href = "reglement.html"><p id = "navbar2">Règlement</p></a>
+                            <i class="fas fa-users"></i><a><p id = "navbar3">Douane</p></a>
+                            <i class="fab fa-discord"></i><a href="https://discord.gg/jNZUYXra2M" target = "_blank"><p id = "navbar4">Discord</p></a>
+                        </div>
+                    </div>
+                    <div class = "main-title1">Informations IRL <strong>Etape 1.</strong></div>
+                    <div class = "discord-result-main">
+                        <h3>Discord</h3>
+                        <input id = "discord-result" class="form-discord" type="text" placeholder="Ex: DakoM#0001">
+                    </div>
+                    <div class = "email-result-main">
+                        <h3>Adresse Mail</h3>
+                        <input id = "email-result" class="form-email" type="email" placeholder="Ex: lsdream@gmail.com" pattern=".+@globex\.com" required>
+                    </div>
+                    <div class = "dob-result-main">
+                        <h3>Date de Naissance</h3>
+                        <input id = "dob-result" class="form-dob" type="date" type="date" value="2002-09-02">
+                    </div>
+                    <div class = "year-result-main">
+                        <h3>Age</h3>
+                        <input id = "year-result" class="form-year" type="number" id="quantity" name="quantity" min="10" max="60" placeholder="16 ans">
+                    </div>
+                    <textarea class = "disponibility-result-main" id="disponibility-result" name ="story" rows="0" cols="0">Disponibilité</textarea>
+                    <div class = "confirm-button-first-step">
+                        <p onclick="firstStepVerification()">Valider</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

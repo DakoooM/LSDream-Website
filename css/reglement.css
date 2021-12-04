@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    --colorShadow: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-main {
+    display: fixed;
+    position: relative;
+    width: 100%;
+    height: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex: 1 0;
+    white-space: nowrap;
+    min-width: 0;
+    box-shadow: 0px 0px 10px black;
+}
+
+.backgrnd-color {
+    position: fixed;
+    background-color: rgba(24, 24, 24, 0.9);
+    height: 100%;
+    width: 100%;
+}
+
+.background-img {
+    position: fixed;
+    background-color: rgb(24, 24, 24);
+    background: url(../assets/wallpaper.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.flex-container a {
+    text-decoration: none;
+    margin: 0.6% 1%;
+}
+
+.flex-container i {
+    color: white;
+}
+
+.flex-container #navbar1, .flex-container #navbar3, .flex-container #navbar4 {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.0vh;
+    margin: 0.6% 1%;
+    transition: 0.3s ease;
+}
+
+.flex-container #navbar1:hover, .flex-container #navbar3:hover {
+    color: rgb(189, 120, 55);
+    cursor: pointer;
+}
+
+.flex-container #navbar4:hover {
+    color: rgb(102, 55, 189);
+    cursor: pointer;
+}
+
+.flex-container #navbar2 {
+    color: rgb(146, 146, 146);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.0vh;
+    transition: 0.3s ease;
+}
+/* END NAVBAR */
+
+
+.first-rule-title {
+    position: fixed;
+    height: 100%;
+    width: 95%;
+    left: 2%;
+    /* border: red 1px solid; */
+    font-size: 1.8vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: 1% 0%;
+}
+
+.first-rule-title p {
+    border-radius: 0.3rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 1.6vh;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: justify;
+    text-transform: lowercase;
+    margin: 1% 0%;
+    padding: 1%;
+}
+
+.first-rule-title strong {
+    color: rgb(233, 146, 32);
+    animation: stepBrowser 5s infinite linear;
+}
+
+.first-rule-title i {
+    margin: 1%;
+}
+
+@keyframes stepBrowser {
+    0% {
+        color: rgb(233, 146, 32);
+    }
+    50% {
+        color: rgb(182, 179, 17);
+    }
+    100% {
+        color: rgb(233, 146, 32);
+    }
+}

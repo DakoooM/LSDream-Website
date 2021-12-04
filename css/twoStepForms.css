@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    --colorShadow: rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-main {
+    display: fixed;
+    position: relative;
+    width: 100%;
+    height: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex: 1 0;
+    white-space: nowrap;
+    min-width: 0;
+    box-shadow: 0px 0px 10px black;
+}
+
+.backgrnd-color {
+    position: fixed;
+    background-color: rgba(24, 24, 24, 0.950);
+    height: 100%;
+    width: 100%;
+}
+
+.background-img {
+    position: fixed;
+    background: url(../assets/wallpaper.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.flex-container a {
+    text-decoration: none;
+    margin: 0.6% 1%;
+}
+
+.flex-container i {
+    color: white;
+}
+
+.flex-container #navbar1, .flex-container #navbar2, .flex-container #navbar4 {
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.0vh;
+    margin: 0.6% 1%;
+    transition: 0.3s ease;
+}
+
+.flex-container #navbar1:hover, .flex-container #navbar2:hover {
+    color: rgb(189, 120, 55);
+    cursor: pointer;
+}
+
+.flex-container #navbar4:hover {
+    color: rgb(107, 46, 221);
+    cursor: pointer;
+}
+
+.flex-container #navbar3 {
+    color: rgb(146, 146, 146);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.0vh;
+    transition: 0.3s ease;
+}
+/* END NAVBAR */
+
+input {
+    outline: none;
+}
+
+input:focus {
+    outline: 1px dashed red;
+    transition: 500ms linear;
+}
+
+.main-title1 {
+    position: fixed;
+    top: 6%;
+    width: 100%;
+    height: 10%;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-size: 4.0vh;
+    user-select: none;
+}
+
+.main-title1 strong {
+    color:rgb(158, 111, 84);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.0vh;
+}
+
+.hourgame-result-main {
+    position: fixed;
+    top: 13%;
+    width: 100%;
+    height: 10%;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-size: 2.0vh;
+    user-select: none;
+}
+
+.form-hourgame {
+    position: fixed;
+    left: 38%;
+    top: 17%;
+    width: 25%;
+    height: 5%;
+    border: transparent;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0.3rem;
+    background-color: rgb(26, 26, 26);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 1.5vh;
+}
+
+.form-hourgame:hover, .form-servergame:hover, .form-nameLast:hover, .form-dobrp:hover, .form-rpWant:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+.servergame-result-main {
+    position: fixed;
+    top: 23%;
+    width: 100%;
+    height: 10%;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-size: 2.0vh;
+    user-select: none;
+}
+
+.form-servergame {
+    position: fixed;
+    left: 38%;
+    top: 27%;
+    width: 25%;
+    height: 5%;
+    border: transparent;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0.3rem;
+    background-color: rgb(26, 26, 26);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 1.5vh;
+}
+
+.nameLast-result-main {
+    position: fixed;
+    top: 33%;
+    width: 100%;
+    height: 10%;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-size: 2.0vh;
+    user-select: none;
+}
+
+.form-nameLast {
+    position: fixed;
+    left: 38%;
+    top: 37%;
+    width: 25%;
+    height: 5%;
+    border: transparent;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    background-color: rgb(26, 26, 26);
+    text-align: center;
+    font-size: 1.5vh;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    opacity: 0.5;
+    transition: 0.3s linear;
+}
+
+::-webkit-calendar-picker-indicator:hover {
+    filter: invert(1);
+    opacity: 1;
+}
+
+.dobrp-result-main {
+    position: fixed;
+    top: 43%;
+    width: 100%;
+    height: 10%;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-size: 2.0vh;
+    user-select: none;
+}
+
+.form-dobrp {
+    position: fixed;
+    left: 38%;
+    top: 47%;
+    width: 25%;
+    height: 5%;
+    border: transparent;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    background-color: rgb(26, 26, 26);
+    text-align: center;
+    font-size: 1.5vh;
+}
+
+textarea {
+    border: transparent;
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.3);
+    border-radius: 0.3rem;
+}
+
+textarea:focus {
+    outline: 1px tomato solid;
+}
+
+.rpWant-result-main {
+    position: fixed;
+    top: 55%;
+    left: 38%;
+    width: 20%;
+    height: 10%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3vh;
+    user-select: none;
+    max-width: 25%;
+    max-height: 14%;
+    min-width: 25%;
+    min-height: 14%;
+    text-align: center;
+    transition: 0.3s linear;
+}
+
+.form-rpWant {
+    position: fixed;
+    left: 38%;
+    top: 60%;
+    width: 25%;
+    height: 5%;
+    border: transparent;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    background-color: rgb(26, 26, 26);
+    text-align: center;
+    font-size: 1.5vh
+} 
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+
+.backgroundLink-result-main {
+    position: fixed;
+    top: 68%;
+    left: 38%;
+    width: 20%;
+    height: 10%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vh;
+    user-select: none;
+    max-width: 25%;
+    max-height: 14%;
+    min-width: 25%;
+    min-height: 14%;
+    text-align: center;
+    transition: 0.3s linear;
+}
+
+.form-backgroundLink {
+    position: fixed;
+    left: 38%;
+    top: 72%;
+    width: 25%;
+    height: 5%;
+    border: transparent;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    background-color: rgb(26, 26, 26);
+    text-align: center;
+    font-size: 1.5vh
+}
+
+.confirm-button-first-step {
+    position: fixed;
+    left: 40.5%;
+    top: 80%;
+    width: 20%;
+    height: 5%;
+    border: transparent;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    background-color: rgb(25, 124, 0);
+    text-align: center;
+    font-size: 3.5vh;
+    transition: 0.3s linear;
+}
+
+.confirm-button-first-step:hover {
+    cursor: pointer;
+    color: rgb(151, 151, 151);
+    background-color: rgb(16, 82, 0);
+}
